@@ -37,9 +37,9 @@ def generate_embedding(text):
 # from dotenv import load_dotenv
 # from openai import AzureOpenAI
 
-# AZURE_OPENAI_ENDPOINT= 'https://ai-team-27-hack.openai.azure.com'
-# AZURE_OPENAI_API_KEY='REDACTED'
-# AZURE_OPENAI_EMBEDDING_DEPLOYMENT='text-embedding-3-small'
+# AZURE_OPENAI_ENDPOINT= os.getenv("AZURE_OPENAI_ENDPOINT")
+# AZURE_OPENAI_API_KEY= os.getenv("AZURE_OPENAI_API_KEY")
+# AZURE_OPENAI_EMBEDDING_DEPLOYMENT= os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT")
 
 # client = AzureOpenAI(
 #     api_key=AZURE_OPENAI_API_KEY,
